@@ -1,0 +1,40 @@
+### GET All
+GET http://localhost:8080/api/v1/FootballPlayers/
+
+### GET first one
+GET http://localhost:8080/api/v1/FootballPlayers/1
+
+### DELETE player (5)
+DELETE http://localhost:8080/api/v1/FootballPlayers/5
+
+### Create one
+POST http://localhost:8080/api/v1/FootballPlayers/
+Content-Type: application/json
+
+{
+  "id": "5",
+  "name": "Manuel",
+  "surname": "Neuer",
+  "number": 1,
+  "age": 38,
+  "league": "Bundesliga",
+  "team": "Bayern Munich",
+  "country": "Germany",
+  "position": "GK"
+}
+
+### Update one
+PUT http://localhost:8080/api/v1/FootballPlayers/
+Content-Type: application/json
+
+{
+  "id": "4",
+  "name": "Raphael",
+  "surname": "Leao",
+  "number": 10,
+  "age": 25,
+  "league": "Serie A",
+  "team": "Milan",
+  "country": "Portugal",
+  "position": "LW"
+}
