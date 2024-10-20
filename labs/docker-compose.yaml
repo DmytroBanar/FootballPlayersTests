@@ -26,5 +26,3 @@ volumes:
 networks:
     default: 
         name: mongodb_network
-# login admin
-# password  pass
